@@ -4,7 +4,6 @@ package com.umeng.soexample.weidumovie.utils;
 import android.util.Log;
 
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
-import com.umeng.soexample.weidumovie.inter.AppUrl;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -47,7 +46,7 @@ public class RetrofitUtils {
         //创建Retrofit的对象
         builder = new Retrofit.Builder()
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-                .baseUrl(AppUrl.BasekUrl)
+               /* .baseUrl(AppUrl.BasekUrl)*/
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client);
 
@@ -67,16 +66,16 @@ public class RetrofitUtils {
 
 
     //创建一个doget方法
-    public RetrofitUtils GetData(String url, RxRetrofitListener rxRetrofitListener) {
+   /* public RetrofitUtils GetData(String url, RxRetrofitListener rxRetrofitListener) {
         //通过方法  得到RetrofitIView对象
         MovieInterface movieInterface = getRetrofitM(url);
         //通过对象调用方法
-        movieInterface.doget()
+        movieInterface.login(url)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(getObserverM(rxRetrofitListener));
         return instance;
-    }
+    }*/
 
 
     private MovieInterface getRetrofitM(String url) {

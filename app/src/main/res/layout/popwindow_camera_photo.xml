@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3aa3a3a3">
+    <!-- 以上的background是遮罩层颜色，具体颜色可以自己设置，在此就不贴出来了-->
+    <!-- 以下的background才是底部弹窗的颜色，此处我新增了两个按钮，当点击已经选取的图片时提供删除和查看 -->
+
+    <LinearLayout
+        android:id="@+id/id_pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_card_background"
+        android:elevation="@dimen/dp_4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/choos_photo_popup_pz"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:gravity="center"
+            android:text="拍照"
+            android:textSize="@dimen/sp_14" />
+
+        <View
+            android:layout_width="@dimen/dp_272"
+            android:layout_height="@dimen/dp_1"
+            android:layout_gravity="center_horizontal"
+            android:background="#f2f2f2" />
+
+        <TextView
+            android:id="@+id/choos_photo_popup_xc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:gravity="center"
+            android:text="从相册选择"
+            android:textSize="@dimen/sp_14" />
+
+        <View
+            android:layout_width="@dimen/dp_272"
+            android:layout_height="@dimen/dp_1"
+            android:layout_gravity="center_horizontal"
+            android:background="#f2f2f2" />
+
+        <TextView
+            android:id="@+id/choos_photo_popup_qx"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:gravity="center"
+            android:text="取消"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+</RelativeLayout>

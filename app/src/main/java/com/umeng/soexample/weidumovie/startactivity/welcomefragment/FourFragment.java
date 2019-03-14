@@ -12,16 +12,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.umeng.soexample.weidumovie.R;
-import com.umeng.soexample.weidumovie.startactivity.StartActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 import butterknife.Unbinder;
 
 public class FourFragment extends Fragment {
-    @BindView(R.id.btn_now_start)
-    TextView btnNowStart;
+
     @BindView(R.id.img_guide_four)
     ImageView imgGuideFour;
     @BindView(R.id.txt_guide_four)
@@ -52,10 +49,5 @@ public class FourFragment extends Fragment {
         unbinder.unbind();
     }
 
-    @OnClick(R.id.btn_now_start)
-    public void onViewClicked() {
-        Intent intent=new Intent(getActivity(),StartActivity.class);
-        startActivity(intent);
 
-    }
 }
