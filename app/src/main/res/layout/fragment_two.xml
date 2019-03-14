@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_guide_two"
+        android:layout_width="@dimen/dp_205"
+        android:layout_height="@dimen/dp_205"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_150"
+        android:src="@mipmap/guide_page_two" />
+
+    <TextView
+        android:id="@+id/txt_guide_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_guide_two"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_60"
+        android:text="一场电影"
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/txt2_guide_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_guide_two"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_21"
+        android:text="看遍人生百态"
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_14" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt2_guide_two"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20">
+
+        <View
+            android:id="@+id/view01"
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_12"
+            android:background="@drawable/shape_guide_round_default" />
+
+        <View
+            android:id="@+id/view02"
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_12"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_guide_round_selected" />
+
+        <View
+            android:id="@+id/view03"
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_12"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_guide_round_default" />
+
+        <View
+            android:id="@+id/view04"
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_12"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_guide_round_default" />
+    </LinearLayout>
+</RelativeLayout>
